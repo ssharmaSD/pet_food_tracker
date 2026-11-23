@@ -4,9 +4,8 @@ const TOLERANCE_MIN = 60;
 const WEEK_ROW_HOURS = [7, 9, 11, 13, 15, 17];
 
 const defaultPets = [
-  { id: "milo", name: "Milo", goal: 3, schedule: ["07:30", "12:30", "18:00"], color: "#e98569", bg: "#f5dfc9", emoji: "🐶" },
-  { id: "luna", name: "Luna", goal: 2, schedule: ["08:00", "18:00"], color: "#9c86bd", bg: "#eee7f4", emoji: "🐱" },
-  { id: "coco", name: "Coco", goal: 2, schedule: ["09:15", "17:30"], color: "#70a78a", bg: "#dfece5", emoji: "🐇" }
+  { id: "moose", name: "Moose", goal: 3, schedule: ["09:00", "14:00", "19:00"], color: "#e98569", bg: "#f5dfc9", emoji: "🐱" },
+  { id: "mittens", name: "Mittens", goal: 3, schedule: ["09:00", "14:00", "19:00"], color: "#9c86bd", bg: "#eee7f4", emoji: "🐱" }
 ];
 
 const PET_EMOJIS = ["🐶", "🐕", "🐱", "🐈", "🐇", "🐹", "🐭", "🐦", "🦜", "🐠", "🐢", "🐍", "🦎", "🐴", "🐷", "🐑", "🦔", "🐾"];
@@ -108,10 +107,9 @@ function loadState() {
   return normalizeState({
     pets: defaultPets,
     entries: [
-      { id: "1", petId: "milo", date: today, time: "07:30" },
-      { id: "2", petId: "milo", date: today, time: "12:30" },
-      { id: "3", petId: "luna", date: today, time: "08:00" },
-      { id: "4", petId: "coco", date: today, time: "09:15" }
+      { id: "1", petId: "moose", date: today, time: "09:00" },
+      { id: "2", petId: "moose", date: today, time: "14:00" },
+      { id: "3", petId: "mittens", date: today, time: "09:00" }
     ]
   });
 }
