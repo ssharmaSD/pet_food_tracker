@@ -278,7 +278,6 @@ document.getElementById("openSettings").addEventListener("click", () => {
 });
 
 document.getElementById("entryForm").addEventListener("submit", event => {
-  event.preventEvent?.();
   event.preventDefault();
   state.entries.push({
     id: crypto.randomUUID(),
